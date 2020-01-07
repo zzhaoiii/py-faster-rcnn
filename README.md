@@ -1,7 +1,10 @@
 ## 安装依赖
-- docker环境：zhy/caffe-frcnn-gpu:latest    
-- docker服务器：192.168.16.247  
+- docker环境：reflog/caffe-fast-rcnn-gpu:latest
+```
+docker pull reflog/caffe-fast-rcnn-gpu:latest
+```  
 - 镜像中未含代码，需建立挂载
+- caffe环境需make
 ```
 nvidia-docker run -it runtime=nvidia --name=caffe-frcnn -v /home/zhangzhao/project/git/py-faster-rcnn:/home/ zhy/caffe-frcnn-gpu:latest
 ```
